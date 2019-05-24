@@ -10,8 +10,29 @@ body {
 
 .header {
   width: 100vw;
-  height: 80px;
-  background: greenyellow;
+  height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background: #55c500;
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    &__logo {
+      img {
+        width: 100px;
+        height: 56px;
+      }
+    }
+  }
+
+  
+  .right {
+    width: 100px;
+    height: 56px;
+    background: #004dbe;
+  }
 }
 
 .wrapper {
@@ -26,7 +47,7 @@ body {
 .l-side {
   width: 200px;
   height: 300px;
-  background: red;
+  background: #ccc;
 }
 
 .main {
