@@ -2,15 +2,21 @@
 
 .wrapper
   = render "shared/l-side"
-  .main
+  = render "shared/main"
+  
+
 
   .r-side
-    .r-side__ad
-    .r-side__reco
-    .r-side__u-ranking
-    .r-side__t-ranking
-    .r-side__o-ranking
-    .r-side__sponsor
+    .ranking
+      .ranking__text
+        .ranking__text--title
+        .ranking__text--period
+      .ranking__list
+        = icon('fas', 'trophy')
+        .ranking__list--icon
+        .ranking__list--name
+        .ranking__list--icon
+        .ranking__list--icon 
 
 
 .footer
