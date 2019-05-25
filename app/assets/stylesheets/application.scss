@@ -1,16 +1,8 @@
 @import "./reset";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+@import 'config/settings';
 @import 'modules/header';
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #fafafa;
-}
-
 
 .wrapper {
   display: flex;
@@ -18,13 +10,26 @@ body {
   width: 100vw;
   height: 100%;
   padding: 20px 10%;
-  
 }
 
 .l-side {
   width: 200px;
-  height: 300px;
-  background: #ccc;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  &__list {
+    width: 200px;
+    padding-left: 16px;
+    padding: 8px;
+    margin-bottom: 8px;
+    color: #888;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      background: #f0f0f0	;
+    }
+  }
 }
 
 .main {
