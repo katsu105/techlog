@@ -3,6 +3,7 @@
 @import 'font-awesome';
 @import 'config/settings';
 @import 'modules/header';
+@import 'modules/l-side';
 
 .wrapper {
   display: flex;
@@ -12,31 +13,11 @@
   padding: 20px 10%;
 }
 
-.l-side {
-  width: 200px;
-  padding-top: 8px;
-  display: flex;
-  flex-direction: column;
-  &__list {
-    width: 200px;
-    padding-left: 16px;
-    padding: 8px;
-    margin-bottom: 8px;
-    color: #888;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    &:hover {
-      background: #f0f0f0	;
-    }
-  }
-}
 
 .main {
   flex-grow: 1;
   height: 1100px; 
   background: blue;
-
 }
 
 .r-side {
