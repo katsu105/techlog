@@ -1,6 +1,7 @@
 @import "./reset";
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+@import 'modules/header';
 
 * {
   box-sizing: border-box;
@@ -10,64 +11,6 @@ body {
   background: #fafafa;
 }
 
-.header {
-  width: 100vw;
-  height: 56px;
-  padding-left: 16px;
-  padding-right: 16px;
-  background: #55c500;
-  color: #ffffff;
-  &__contents {
-    height: 56px;
-    display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-
-  .left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 56px;
-    &__logo {
-      height: 56px;
-      
-      img {
-        width: 100px;
-        height: 56px;
-      }
-    }
-    &__icon {
-      width: 20px;
-      height: 20px;
-      background-color: rgba(0,0,0,.3);
-      color: white;
-      text-align: center;
-      line-height: 20px;
-      border-radius: 10%;
-      margin-left: 4px;
-    }
-    &__home {
-      margin-top: 4px;
-      margin-left: 24px;
-      font-size: 12px;
-    }
-    &__comunity {
-      margin-right: 24px;
-      margin-left: 24px;
-    }
-  }
-
-
-  .right {
-    width: 100px;
-    height: 56px;
-    background: #004dbe;
-  }
-}
 
 .wrapper {
   display: flex;

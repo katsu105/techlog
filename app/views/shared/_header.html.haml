@@ -1,0 +1,34 @@
+.header
+  .header__contents
+    .left
+      .left__logo
+        = image_tag 'logo2.jpg'
+      .left__icon
+        = icon('fas', 'caret-down')
+      .left__home 
+        ホーム
+        = icon('fas', 'caret-down')
+      .left__community 
+        コミュニティ
+        = icon('fas', 'caret-down')
+      .left__input
+        %input{placeholder: "キーワードを入力"}
+        = icon('fas', 'search', class: "aa")
+
+    .right
+      .right__stocks
+        = icon('fas', 'folder-open')
+        ストック一覧
+      .right__post
+        .right__post--text
+          = icon('fas', 'edit')
+          投稿する
+
+      .right__notifications
+        .right__notifications--count
+          0
+
+      .right__user
+        .right__user--icon
+          = image_tag("icon.png", class: "right__user--icon")
+        = icon('fas', 'caret-down') 
