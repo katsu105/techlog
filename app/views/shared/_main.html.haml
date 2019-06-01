@@ -1,0 +1,55 @@
+.main
+  .main__title
+    .main__title--icon
+      = icon('fas', 'chart-line')
+    .main__title--text
+      トレンド
+    .main__title--description
+      最近人気の記事を表示
+  .main__period
+    .main__period--day.active
+      1日
+    .main__period--week
+      週間
+    .main__period--month
+      月間
+  .main__article
+    = image_tag("a-icon.png", class: "main__article--icon")
+    .main__article--description
+      .main__article--title
+        ここにタイトルが入ります。ここにタイトルが入ります。
+      .main__article--info
+        .main__article--user-name
+          by hogehoge
+        .main__article--ago
+          2 days ago
+        .main__article--like
+          = icon('fas', 'thumbs-up') 
+          400
+  .main__article
+    = image_tag("a-icon.png", class: "main__article--icon")
+    .main__article--description
+      .main__article--title
+        ここにタイトルが入ります。ここにタイトルが入ります。
+      .main__article--info
+        .main__article--user-name
+          by hogehoge
+        .main__article--ago
+          2 days ago
+        .main__article--like
+          = icon('fas', 'thumbs-up') 
+          400
+        
+  .main__article
+    = image_tag("a-icon.png", class: "main__article--icon")
+    .main__article--description
+      .main__article--title
+        ここにタイトルが入ります。ここにタイトルが入ります。
+      .main__article--info
+        .main__article--user-name
+          by hogehoge
+        .main__article--ago
+          2 days ago
+        .main__article--like
+          = icon('fas', 'thumbs-up') 
+          400

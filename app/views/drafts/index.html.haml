@@ -1,0 +1,54 @@
+= render "shared/header"
+
+.wrapper
+  = render "shared/l-side"
+  = render "shared/main"
+  
+  .r-side
+    .ranking
+      .ranking__text
+        .ranking__text--title
+          ユーザーランキング
+        .ranking__text--period
+          .ranking__text--period-week.active
+            週間
+          .ranking__text--period-month
+            月間
+          .ranking__text--period-all
+            全て
+      .ranking__list
+        = icon('fas', 'trophy', class: "ranking__list--num")
+        = image_tag('icon.png', class: "ranking__list--icon")
+        .ranking__list--name
+          @ユーザー名
+        .ranking__list--contributions
+          .ranking__list--contributions-num
+            800
+          .ranking__list--contributions-text
+            Contributions
+
+      .ranking__list
+        = icon('fas', 'trophy', class: "ranking__list--num")
+        = image_tag('icon.png', class: "ranking__list--icon")
+        .ranking__list--name
+          @ユーザー名
+        .ranking__list--contributions
+          .ranking__list--contributions-num
+            800
+          .ranking__list--contributions-text
+            Contributions
+      
+      .ranking__list
+        = icon('fas', 'trophy', class: "ranking__list--num")
+        = image_tag('icon.png', class: "ranking__list--icon")
+        .ranking__list--name
+          @ユーザー名
+        .ranking__list--contributions
+          .ranking__list--contributions-num
+            800
+          .ranking__list--contributions-text
+            Contributions
+
+.footer
+  .footer__left
+  .footer__right
