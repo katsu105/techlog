@@ -20,7 +20,7 @@
         = icon('fas', 'folder-open')
         ストック一覧
       .right__post
-        .right__post--text
+        = link_to new_draft_path, class: "right__post--text" do
           = icon('fas', 'edit')
           投稿する
 
