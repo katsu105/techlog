@@ -1,1 +1,6 @@
-aaasaaaaaaaaaaaaaaaaa
+= form_for @draft do |f|
+  = f.text_field :content
+  = f.file_field :image
+  = f.submit "Send"
+
+  
